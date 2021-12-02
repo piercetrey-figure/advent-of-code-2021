@@ -9,7 +9,7 @@ private enum class Direction(val key: String, val type: DirectionType, val polar
     Up("up", DirectionType.Vertical, -1),
 }
 
-open private class Position(val horizontal: Int, val depth: Int) {
+private open class Position(val horizontal: Int, val depth: Int) {
     val result: Int
         get() = horizontal * depth
 
