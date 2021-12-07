@@ -1,7 +1,5 @@
 import java.util.Collections
 
-fun String.toInts() = split(",").map { it.toInt() }
-
 fun List<Int>.advance(days: Int): Long {
     var dayBuckets = Collections.nCopies(9, 0L).toMutableList()
     forEach { dayBuckets[it] = dayBuckets[it] + 1 }
