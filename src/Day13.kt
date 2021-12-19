@@ -1,6 +1,5 @@
 import java.lang.IllegalStateException
 
-data class Point(val x: Int, val y: Int)
 sealed class Fold(val line: Int)
 class X(line: Int): Fold(line)
 class Y(line: Int): Fold(line)

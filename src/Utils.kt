@@ -16,3 +16,7 @@ fun String.md5(): String = BigInteger(1, MessageDigest.getInstance("MD5").digest
  * Split a string by commas and map to ints
  */
 fun String.toInts() = split(",").map { it.toInt() }
+
+data class Point(val x: Int, val y: Int) {
+    override fun toString() = "$x,$y"
+}

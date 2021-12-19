@@ -1,6 +1,3 @@
-data class Point(val x: Int, val y: Int) {
-    override fun toString() = "$x,$y"
-}
 data class LineSegment(val p1: Point, val p2: Point) {
     val isHorizontal = p1.y == p2.y
     val isVertical = p1.x == p2.x
